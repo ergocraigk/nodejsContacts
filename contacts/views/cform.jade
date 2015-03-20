@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title Page Title
+  body
+    h2 Contacts Form
+    p If you would like to leave your contact info, I will get back to you soon.
+    form(method='post')
+      | First Name: 
+      input(type='text', name='firstname')
+      br
+      br
+      |         Last Name: 
+      input(type='text', name='lastname')
+      br
+      br
+      |         Company: 
+      input(type='text', name='company')
+      br
+      br
+      |         Job Title: 
+      input(type='text', name='jobTitle')
+      br
+      br
+      |         Email: 
+      input(type='email', name='email')
+      br
+      br
+      |         Phone#: 
+      input(type='number', name='phone')
+      br
+      br
+      |         Date Met: 
+      input(type='date', name='dateMet' id='date')
+      br
+      br
+      |         Where met: 
+      input(type='text', name='whereMet')
+      br
+      br
+      |         Notes: 
+      input(type='textarea', name='notes')
+      br
+      br
+      |         
+      input(type='submit', name='submit')
+script(src='javascripts/cform.js')

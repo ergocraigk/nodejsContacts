@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    form#edit(name="edit", method="post", action="makeEdit")
+        label First Name: 
+            input#first(type="text" name="first")
+            br
+            br
+            label Last Name:
+            input#last(type="text" name="first")

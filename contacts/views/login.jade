@@ -1,0 +1,19 @@
+doctype
+html
+    head
+                meta(name='viewport', content='width=device-width, initial-scale=1')
+                title= title
+                link(rel='stylesheet', href='../public/stylesheets/dist/css')
+                link(rel='stylesheet', href='/css/index.css')
+                link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css")
+                script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+        body
+                block content
+                        .container
+                                form.form-signin(action="/login", method="post")
+                                        h2.form-signin-heading Please sign in
+                                        input.input-block-level(type="text", name="username", placeholder="Email address")
+                                        br
+                                        input.input-block-level(type="password", name="password", placeholder="Password")
+                                        br
+                                        button.btn.btn-large.btn-primary(type="submit") Sign in
